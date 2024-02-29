@@ -5,7 +5,7 @@ def home():
     
     return render_template('index.html')
 
-@app.route('/navbar')
+@app.route('/dias')
 def bar():
     
     return render_template('dias.html')

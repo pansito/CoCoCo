@@ -1,52 +1,56 @@
-{% extends 'navbar.html' %}
+{% extends '/static/navbar.html' %}
 
 {% block content %}
+<header class="header">
+    <h1 class="text-4xl font-bold">ECCO</h1>
+    <p></p>
+</header>
 <body>
     <main>
-        <nav>
-            <ul>
-                <li><a href='../index.html'>Home</a></li>
-                <li>Recursos</li>
-                <li>
-                    <div class="dropdown">
-                        Eventos
-                        <div class="dropdown-content">
-                            <a href="#">ECCO</a>
-                            <a href="./dias.html">Dias Combinatoria</a>
-                            <a href="https://sesaco.combinatoria.co/página-principal">SeSaCo</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </nav>
         <header class="header">
-            <h1>Encuentro Colombiano de Combinatoria</h1>
+            <h1 class="text-4xl font-bold">Encuentro Colombiano de Combinatoria</h1>
+            <p></p>
         </header>
     </main>
     <section>
-        <div class = 'container'>
-            <h2>
+        <div class='container'>
+            <h2 class="font-bold text-2xl">
+
                 Sobre ECCO
             </h2>
-            <p>
-                Cada año se realiza el Encuentro Colombiano de Combinatoria (ECCO), en distintas ciudades de colombia.
-                En este evento se presentan diferentes minicursos guiados por expertos internacionales,
-                acompañados de sesiones de problemas, charlas investigativas, páneles de discussion, etc.
-            </p><p> Las actividades se encuentran diseñadas para que quienes asistan tengan la oportunidad de interactuar de manera cercana
-                personas de todos los grados académicos en matemáticas dentro de un ambiente profesional y acogedor. 
-               </p>
+            <p class="m-3 ">
+                El encuentro colombiano de combinatoria es una escuela la cual se realiza cada dos años, en distintas ciudades de colombia.
+                El objetivo principal es promover la investigación matemática entre los jóvenes estudiantes en un entorno motivador, 
+                y consolidar una red regional de investigación en combinatoria. 
+                El programa está estructurado en torno a los estudiantes, y se anima a todos los participantes, independientemente de su etapa profesional,
+                 a participar en las sesiones de ejercicios y en las demás actividades, ademas de generar espacios de interaccion entre todos los asistentes.
+            </p >
+
+            <p class="m-3 "> 
+                
+                Las dos semanas de la escuela consisten en cuatro minicursos acompañados de sesiones de ejercicios, dos conferencias plenarias, 
+                un tutorial de SageMath y  charlas investigativas, páneles de discussion, etc, presentadas por los participantes
+                que busca poner estrecho contacto a jóvenes matemáticos de la región con investigadores internacionales y expertos líderes en diversos campos de la combinatoria y sus aplicaciones. 
+                           
+
+            </p>
         </div>
         <div class="container">
             <h2>
                 Eventos futuros
             </h2>
-            <a href='https://ecco2024.combinatoria.co/inicio-español/programa' target='_blank'><img src="./images/eccoposter.jpeg" alt="Poster ecco 2024"></a>
+            <a href="https://ecco2024.combinatoria.co/inicio-español/inscripciones-y-fondos" target="_blank">
+                <img class="h-auto max-w-xl rounded-md"
+                    src="{{url_for('static',filename='../static/images/eccoposter.jpeg')}}"
+                    alt="posrted ecco 2024 logo" />
+            </a>
         </div>
         <div class="container">
             <h2>
                 Eventos Anteriores
             </h2>
-            <a href='https://ecco2024.combinatoria.co/inicio-español/programa' target='_blank'><img src="./images/eccoposter.jpeg" alt="Poster ecco 2024"></a>
+            <a href='https://ecco2024.combinatoria.co/inicio-español/programa' target='_blank'><img
+                    src="./images/eccoposter.jpeg" alt="Poster ecco 2024"></a>
         </div>
     </section>
 </body>

@@ -1,48 +1,47 @@
-{% extends 'navbar.html' %}
+{% extends '/static/navbar.html' %}
 
 {% block content %}
+
 <body>
     <main>
-        <nav>
-            <ul>
-                <li><a href='../index.html''>Home</a></li>
-                <li>Recursos</li>
-                <li>
-                    <div class="dropdown">
-                        Eventos
-                        <div class="dropdown-content">
-                            <a href="./ecco.html">ECCO</a>
-                            <a href="#">Dias Combinatoria</a>
-                            <a href="https://sesaco.combinatoria.co/página-principal">SeSaCo</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </nav>
         <header class="header">
-            <h1>Dias de Combinatoria</h1>
+            <h1 class="text-4xl font-bold">Dias de Combinatoria</h1>
         </header>
     </main>
     <section>
-        <div class = 'container'>
-            <h2>
-                Sobre Dias de Combinatoria
-            </h2>
-            <p>
-                Días de Combinatoria es una <a href='https://www.umalca.org/eventos/emalca/' target='_blank'>Escuela Emalca</a> 
-                de formación matemática que constará de cuatro minicursos introductorios y sus respectivas sesiones de problemas. 
-                Los minicursos están orientados a preparar a los participantes en temas básicos de combinatoria y áreas afines, 
-                y servirán como preparación para otros eventos que se realicen en la región, y en particular el Encuentro Colombiano de 
-                Combinatoria ECCO.
-            </p>
-        </div>
-        <div class="container">
-            <h2>
-                Eventos anteriores
-            </h2>
-            <a href='https://sites.google.com/view/dias2023' target='_blank'><img src="./images/eccoposter.jpeg" alt="Poster ecco 2024"></a>
-        </div>
-    </section>
+        <div class = ' container'>
+                        <h2>
+                            Sobre Dias de Combinatoria
+                        </h2>
+                        <p>
+                            Días de Combinatoria es una <a href='https://www.umalca.org/eventos/emalca/'
+                                target='_blank'>Escuela Emalca</a>
+                            de formación matemática que constará de cuatro minicursos introductorios y sus respectivas
+                            sesiones de problemas.
+                            Los minicursos están orientados a preparar a los participantes en temas básicos de
+                            combinatoria y áreas afines,
+                            y servirán como preparación para otros eventos que se realicen en la región, y en particular
+                            el Encuentro Colombiano de
+                            Combinatoria ECCO.
+                        </p>
+                        </div>
+                        <div class="container">
+                            <h2>
+                                Eventos futuros
+                            </h2>
+
+                        </div>
+                        <div class="container">
+                            <h2>
+                                Eventos Anteriores
+                            </h2>
+                            <a href="https://sites.google.com/view/dias2023"
+                                target="_blank">
+                                <img class="h-auto max-w-xl rounded-md"
+                                    src="{{url_for('static',filename='../static/images/dias2023poster.heic')}}"
+                                    alt="posrted ecco 2024 logo" />
+                            </a>
+                        </div>
+                        </section>
 </body>
 {% endblock %}
-

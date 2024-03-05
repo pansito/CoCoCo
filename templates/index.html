@@ -1,31 +1,94 @@
-{% extends 'navbar.html' %}
+{% extends '/static/navbar.html' %}
 
 {% block content %}
+<header class="header">
+    <h1 class="text-4xl font-bold">Comunidad Colombiana de Combinatoria</h1>
+</header>
+<section class="justify-center grid grid-cols-4">
+    <div class="col-span-2 col-start-2 bg-gray-100 rounded-lg">
+        <p>Bienvenidos a la <strong>Comunidad Colombiana de Combinatoria</strong>. Somos un grupo apasionado de
+            matemáticos, docentes,
+            estudiantes y entusiastas que comparten un interés común: la <strong>combinatoria</strong>. Nuestra misión
+            es
+            fomentar el estudio y la investigación en esta área de la matemática.
+            hace parte de la SFSU-Colombia Combinatorics Initiative la cual fue creada por <a class="underline"
+                href="https://fardila.com/SFSUColombia/que.html">Federico Ardila. </a>
+        </p>
+        <h2>¿Qué es la Combinatoria?</h2>
+        <p>La <strong>combinatoria</strong> es una rama de las matemáticas que se ocupa de las diferentes formas de
+            combinar, organizar o seleccionar elementos de un conjunto finito, sujeto a ciertas reglas y restricciones.
+            Básicamente, analiza las diversas formas de realizar agrupaciones con los elementos de un conjunto,
+            formándolas
+            y calculando su número.</p>
+    </div>
+</section>
+<h2>Nuestros Objetivos</h2>
+<ol>
+    <li><strong>Encuentro Colombiano de Combinatoria (ECCO)</strong>: Organizamos el ECCO cada dos años, un evento
+        que reúne a matemáticos nacionales e internacionales interesados en la combinatoria. Durante el ECCO, se
+        imparten minicursos y se comparten investigaciones en un ambiente de respeto y aprendizaje.</li>
+    <li><strong>Días de Combinatoria</strong>: Nuestra escuela de formación, "Días de Combinatoria", lleva
+        conocimientos básicos de combinatoria a estudiantes de distintas regiones del país. Queremos inspirar a la
+        próxima generación de matemáticos y promover la igualdad e inclusión en esta área.</li>
+    <li><strong>Colaboración e Investigación</strong>: Nos conectamos con pares en otras áreas de las matemáticas
+        para fomentar la producción científica en la combinatoria a nivel nacional. Además, divulgamos los
+        resultados obtenidos por nuestros miembros en eventos nacionales e internacionales.</li>
+    <li><strong>Difusión</strong>: No solo nos quedamos en el ámbito académico. Planeamos eventos para llevar la
+        combinatoria a otros contextos, como charlas de divulgación en colegios o museos.</li>
+</ol>
+<h2>Únete a Nuestra Comunidad</h2>
+<p>Si te apasiona la combinatoria o simplemente quieres aprender más sobre ella, ¡únete a nosotros! Explora nuestro
+    sitio web, participa en nuestros eventos y sé parte de esta vibrante comunidad matemática.</p>
 
-        <header class="header">
-            <h1 class="text-4xl font-bold">Comunidad Colombiana de Combinatoria</h1>
-            <p></p>
-        </header>
-        <section>
-            <h2>Eventos</h2>
-            <article class="item">
-                <h3><Strong><a href="https://ecco2024.combinatoria.co/inicio-español" target="_blank">Encuentro
-                            Colombiano de Combinatoria 2024</a></Strong></h3>
-                <!--
+<p>¡Esperamos verte pronto en nuestros eventos y actividades! 🌟🔢🔍</p>
+
+<section class="bg-[#F2F2F2]">
+    <h2 class="text-4xl font-bold mb-10 ">Anuncios</h2>
+    <div>
+        <h2 class="text-2xl font-bold m-5"> Eventos futuros</h2>
+        <div class="grid grid-cols-2 gap-4  grid-rows-2">
+            <div class="row-span-2 container">
+                <a class="w-auto" href="https://ecco2024.combinatoria.co/inicio-español/inscripciones-y-fondos"
+                    target="_blank">
+                    <img class="h-auto max-w-xl rounded-md"
+                        src="{{url_for('static',filename='../static/images/eccoposter.jpeg')}}"
+                        alt="posrted ecco 2024 logo" />
+                </a>
+            </div>
+            <div class="container">
+                <p> Empanada</p>
+            </div>
+            <div class="container">
+                <p> Empanada2</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div>
+
+        <h2 class="text-2xl font-bold"> Eventos anteriores</h2>
+    </div>
+    <article class="item">
+        <h3>
+            <a href="https://ecco2024.combinatoria.co/inicio-español" target="_blank">Encuentro
+                Colombiano de Combinatoria 2024</a></Strong>
+
+
+        </h3>
+        <!--
                 <p>June 17-28 2024</p>
                 <p>Minicourses: Matthias Beck, Isabella Novik, Hal Schenck, Cynthia Vinzant</p>
                 <p>Plenary Speakers: Luis Núñez, Kris Shaw</p>-->
-                <h3><Strong><a href="https://sesaco.combinatoria.co" target="_blank">Dias De Combinatoria</a></Strong>
-                </h3>
-                <h3><Strong><a href="https://sesaco.combinatoria.co" target="_blank">Seminario Sabanero de
-                            Combinatoria</a></Strong></h3>
-            </article>
-        </section>
-    </main>
+        <h3><Strong><a href="https://sesaco.combinatoria.co" target="_blank">Dias De Combinatoria</a></Strong>
+        </h3>
+        <h3><Strong><a href="https://sesaco.combinatoria.co" target="_blank">Seminario Sabanero de
+                    Combinatoria</a></Strong></h3>
+    </article>
+</section>
+</main>
 
-    <footer class="footer">
-        <p>&copy; 2024 Comunidad Colombiana de Combinatoria</p>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-</body>
+
+
+
+
 {% endblock %}
